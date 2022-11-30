@@ -7,15 +7,16 @@
 
 package com.example.domain;
 
-import org.springframework.data.annotation.Id;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 
 @Entity
 public class User {
-    @Id
+
     @GeneratedValue
+    @Id
     private int uid;
     private String username;
     private String address;
